@@ -1,0 +1,46 @@
+html{
+	border-top: 10px #607D8B solid;
+}
+
+body{
+	margin-top:100px;
+	color: #424242;
+}
+
+ul li {
+	display: inline-block;
+	}
+li:after {
+content: " | ";
+color: #ccc;
+display: inline-block;
+font-size: 100%;
+margin: 0 0 0 .5em;
+}
+li:last-child:after { content: " "; }  /* remove the pipe from the last list item */
+
+img.profile {
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	margin: auto;
+}
+
+.fa {
+	color: #607D8B;
+}
+
+a {
+	color: #FF4081;
+}
+a:hover {
+	color:#607D8B;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+body{
+	margin-top:10px;
+}
+
+ }
