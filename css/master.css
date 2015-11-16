@@ -66,7 +66,7 @@ h2{
 	color: #607D8B;
 }
 
-.fa-refresh{
+.fa-info-circle{
 	position: relative;
 	top: -40px;
 	right: -260px;
@@ -136,7 +136,7 @@ li:last-child:after { content: " "; }  /* remove the pipe from the last list ite
 		top: 0px;
 		left: 10%;
 	}
-	.fa-refresh{
+	.fa-info-circle{
 		position: absolute;
 		top: 10px;
 		right: 10px;
