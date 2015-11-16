@@ -1,3 +1,4 @@
+/*resets*/
 * {
 	margin: 0;
 	padding: 0;
@@ -7,11 +8,11 @@
 	list-style: none;
 	outline: none;
 }
-
+/*changes the full page background color*/
 html {
 	background-color: #263238;
 }
-
+/*styles the card itself*/
 body {
 	color: #424242;
 	color: rgba(0, 0, 0, .75);
@@ -36,6 +37,7 @@ body {
 	-webkit-animation-timing-function: ease-in;
 }
 
+/*places the profile image as a masked background*/
 .profile {
 	position: absolute;
 	top: 49px;
@@ -49,6 +51,7 @@ body {
 	-moz-border-radius: 100px;
 }
 
+/*basic typography*/
 h1 {
 	font-size: 2.5em;
 	line-height: 1em;
@@ -62,6 +65,7 @@ h2{
 	font-weight: 300;
 }
 
+/*font awesome icon styles*/
 .fa {
 	color: #607D8B;
 }
@@ -72,6 +76,7 @@ h2{
 	right: -260px;
 }
 
+/*links*/
 a {
 	color: #FF4081;
 }
@@ -84,6 +89,7 @@ p {
 	margin-bottom: 20px;
 }
 
+/*list style*/
 ul li {
 	display: inline-block;
 }
@@ -97,6 +103,7 @@ li:after {
 
 li:last-child:after { content: " "; }  /* remove the pipe from the last list item */
 
+/*load pop animation*/
 @-webkit-keyframes pop {
 	from {
 		-webkit-transform: scale(.1);
@@ -111,9 +118,9 @@ li:last-child:after { content: " "; }  /* remove the pipe from the last list ite
 	}
 }
 
+/*responsive breakpoint styles*/
 
-
-/* Small devices (tablets, 768px and up) */
+/* medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
 	body{
 		position: relative;
@@ -143,6 +150,7 @@ li:last-child:after { content: " "; }  /* remove the pipe from the last list ite
 	}
 }
 
+/* Small devices (mobile screens, 560px and down) */
 	@media (max-width: 560px) {
 		body{
 			max-width: 235px;
