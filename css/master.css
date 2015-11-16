@@ -66,6 +66,12 @@ h2{
 	color: #607D8B;
 }
 
+.fa-refresh{
+	position: relative;
+	top: -40px;
+	right: -260px;
+}
+
 a {
 	color: #FF4081;
 }
@@ -130,8 +136,14 @@ li:last-child:after { content: " "; }  /* remove the pipe from the last list ite
 		top: 0px;
 		left: 10%;
 	}
+	.fa-refresh{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+}
 
-	@media (max-width: 480px) {
+	@media (max-width: 560px) {
 		body{
 			max-width: 235px;
 			padding: 50px;
