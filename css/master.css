@@ -15,7 +15,8 @@ html {
 body {
 	color: #424242;
 	color: rgba(0, 0, 0, .75);
-	font: 13px/20px "Helvetica Neue", Arial, sans-serif;
+	font: 13px/20px "Lato","Helvetica Neue", Arial, sans-serif;
+	font-weight: 400;
 	text-shadow: #fff 0 1px 0;
 	position: absolute;
 	top: 50%;
@@ -35,36 +36,32 @@ body {
 	-webkit-animation-timing-function: ease-in;
 }
 
-h1 {
+.profile {
 	position: absolute;
 	top: 49px;
 	left: 49px;
 	width: 200px;
 	height: 201px;
 	background: url(../img/profile.jpg) no-repeat 0 0;
-  background-size: contain;
-	text-indent: 250px;
-	overflow: hidden;
-	white-space: nowrap;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
+	background-size: contain;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1em;
+	font-weight: 700;
+	color: #FF4081;
 }
 
 h2{
-  font-size: 1.75em;
-      line-height: 1.35em;
+	font-size: 1.75em;
+	line-height: 1.35em;
+	font-weight: 300;
 }
 
-strong {
-	color: #FF4081;;
-}
-
-.intro {
-	font-size: 2.5em;
-	line-height: 1em;
-	font-weight: bold;
-}
 .fa {
 	color: #607D8B;
 }
@@ -77,20 +74,21 @@ a:hover {
 }
 
 p {
-  margin-top: 1em;
+	margin-top: 1em;
 	margin-bottom: 20px;
 }
 
 ul li {
 	display: inline-block;
-	}
-li:after {
-content: " | ";
-color: #ccc;
-display: inline-block;
-font-size: 100%;
-margin: 0 0 0 .5em;
 }
+li:after {
+	content: " | ";
+	color: #ccc;
+	display: inline-block;
+	font-size: 100%;
+	margin: 0 0 0 .5em;
+}
+
 li:last-child:after { content: " "; }  /* remove the pipe from the last list item */
 
 @-webkit-keyframes pop {
@@ -111,56 +109,55 @@ li:last-child:after { content: " "; }  /* remove the pipe from the last list ite
 
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-body{
-   position: relative;
-   top: 0px;
-   left: 0px;
-   margin: 5% auto;
-   /*max-width: 235px;*/
-   width: 75%;
-   height: auto;
-   padding: 50px ;
-}
-h1 {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  float: left;
-  background-size: cover;
-}
-.intro, h2, p, .text-center {
-    position: relative;
-    top: 0px;
-    left: 10%;
-}
+	body{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		margin: 5% auto;
+		width: 75%;
+		height: auto;
+		padding: 50px ;
+	}
+	.profile {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		float: left;
+		background-size: cover;
+	}
+	.intro, h1, h2, p, .text-center {
+		position: relative;
+		top: 0px;
+		left: 10%;
+	}
 
-@media (max-width: 480px) {
-body{
-   max-width: 235px;
-  padding: 50px;
-  width: auto;
-  margin: 5% auto;
-}
-h1 {
-	position: relative;
-	top: 0px;
-	left: 0px;
-	width: 200px;
-	height: 201px;
-	background: url(../img/profile.jpg) no-repeat 0 0;
-  background-size: contain;
-	text-indent: 250px;
-	overflow: hidden;
-	white-space: nowrap;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  margin: auto auto 25px;
-    float: none;
-}
+	@media (max-width: 480px) {
+		body{
+			max-width: 235px;
+			padding: 50px;
+			width: auto;
+			margin: 5% auto;
+		}
+		.profile {
+			position: relative;
+			top: 0px;
+			left: 0px;
+			width: 200px;
+			height: 201px;
+			background: url(../img/profile.jpg) no-repeat 0 0;
+			background-size: contain;
+			text-indent: 250px;
+			overflow: hidden;
+			white-space: nowrap;
+			border-radius: 100px;
+			-webkit-border-radius: 100px;
+			-moz-border-radius: 100px;
+			margin: auto auto 25px;
+			float: none;
+		}
 
-.intro, h2, p, .text-center{
-  text-align: center;
-  left: 0px;
-}
-}
+		.intro, h1, h2, p, .text-center{
+			text-align: center;
+			left: 0px;
+		}
+	}
